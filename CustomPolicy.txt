@@ -1,0 +1,10 @@
+﻿{ 
+   "Statement": [{ 
+      "Resource":"RESOURCE", 
+      "Condition":{ 
+         "IpAddress":{"AWS:SourceIp":"IP_ADDRESS"},
+         "DateGreaterThan":{"AWS:EpochTime":START_TIME},
+         "DateLessThan":{"AWS:EpochTime":END_TIME}
+      } 
+   }] 
+}
